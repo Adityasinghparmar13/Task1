@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+.allcont{
+    display: flex;
+    margin-top: 50px;
+    height: 80%;
+    width: 90%;
+    justify-self: center;
+}
+
+.cont{
+    height: 100%;
+    flex:0.5;
+    background-size: cover;
+    margin-right: 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    transition: flex 0.7s ease-in;
+    cursor: pointer;
+    background-position: center;
+    position: relative;
+}
+
+.cont p{
+    color: white;
+    opacity: 0;
+}
+
+.active{
+    flex: 5;
+}
+
+.active p{
+    position: absolute;
+    font-size: 40px;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
